@@ -1,0 +1,48 @@
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    border: 1px solid var(--card-border);
+    margin-bottom: 2rem;
+}
+
+.scoreRing {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 8px solid currentColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--success);
+}
+
+.good {
+    color: var(--success);
+}
+
+.average {
+    color: var(--warning);
+}
+
+.poor {
+    color: var(--error);
+}
+
+.scoreValue {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.scoreLabel {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 0.25rem;
+    opacity: 0.8;
+}

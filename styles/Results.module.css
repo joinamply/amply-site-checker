@@ -1,0 +1,120 @@
+.container {
+    min-height: 100vh;
+    background: var(--background);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid var(--card-border);
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    cursor: pointer;
+    background: linear-gradient(to right, var(--primary), #a855f7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.actionBtn {
+    padding: 0.5rem 1rem;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    color: var(--foreground);
+    border-radius: var(--radius);
+    font-size: 0.875rem;
+    transition: all 0.2s;
+}
+
+.actionBtn:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.loading,
+.error {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid var(--card-border);
+    border-top-color: var(--primary);
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.subtext {
+    color: var(--secondary);
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+
+.urlTitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.urlTitle span {
+    color: var(--primary);
+}
+
+.backBtn {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: var(--radius);
+}
+
+@media print {
+    .header {
+        position: static;
+        border-bottom: none;
+    }
+
+    .actions {
+        display: none;
+    }
+
+    .container {
+        background: white;
+        color: black;
+    }
+
+    .urlTitle span {
+        color: black;
+    }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "amply-site-checker",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "axe-core": "^4.11.0",
+    "next": "16.0.7",
+    "puppeteer": "^24.32.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^9",
+    "eslint-config-next": "16.0.7"
+  }
+}
